@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-image: url('natural-book.jpeg.jpg');
+    height: 100vh; /* Ensure full viewport height */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+.top-bar {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better contrast */
+    padding: 10px 0;
+    text-align: center;
+}
+
+.top-bar h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: white;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background color for content */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.website_text {
+    text-align: center;
+}
+
+.website_text h1 {
+    font-size: 32px;
+    color: #000000;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    animation: slide-in-right 2s ease-in-out forwards;
+}
+
+p {
+    font-size: 20px;
+}
+label{
+    font-size: 20px;
+}
+
+@keyframes slide-in-right {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.uploading_part {
+    margin-top: 20px;
+}
+
+#file-upload {
+    margin-top: 10px;
+}
+
+#message {
+    margin-top: 10px;
+    color: #6c757d;
+}
+.submit_button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.submit_button input[type="submit"] {
+    background-color: rgb(61, 190, 61);
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

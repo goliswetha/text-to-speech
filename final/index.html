@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hindi Text-to-Speech</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="uploading-part">
+        <section class="top-bar">
+            <h2>GENERATING AUDIO BOOKS</h2>
+        </section>
+        <div class="container">
+            <div class="website_text">
+                <h1 id="animate-text">Hi! Enable learning through smarter ways. LISTEN.LEARN.LEAD</h1>
+            </div>
+            <p>Upload the Hindi PDF/PNG file you want to convert to audio.</p>
+            <div id="inputs">
+                <form action="http://127.0.0.1:8000/uploader" method="POST" name="files" enctype="multipart/form-data">
+                    <label for="file-upload" >Select Hindi PDF for conversion:</label>
+                    <input type="file" id="file-upload" name="files" value="files" />
+                    <br><br>
+                    <div class="submit_button">
+                        <input type="submit" value="Convert to Audio">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
